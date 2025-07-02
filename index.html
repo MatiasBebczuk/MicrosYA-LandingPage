@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MicrosYA - Traslados inteligentes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo MicrosYA" class="logo"/>
+      <h1>MicrosYA</h1>
+      <p class="slogan">Soluciones inteligentes para traslados institucionales</p>
+    </header>
+
+    <main>
+      <section class="descripcion">
+        <p>
+          MicrosYA es una aplicación web que busca solucionar problemas relacionados a la logística y/o administración de traslados privados donde se presenta una gran cantidad de personas, actualmente orientado a instituciones.
+        </p>
+      </section>
+
+      <section class="formulario">
+        <h2>Contactanos</h2>
+        <form action="https://formsubmit.co/matiasbeck07@gmail.com" method="POST">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit">Enviar consulta</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 MicrosYA</p>
+    </footer>
+  </div>
+</body>
+</html>
