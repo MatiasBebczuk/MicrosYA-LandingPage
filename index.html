@@ -24,23 +24,34 @@
 
       <section class="formulario fade-hidden fade-in-up delay-3">
         <h2>Contactanos</h2>
-        <form action="https://formsubmit.co/matiasbeck07@gmail.com" method="POST">
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
-          </div>
-          <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" required>
-          </div>
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
-          </div>
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://microsya-landing.vercel.app/gracias.html">
-          <button type="submit">Enviar consulta</button>
-        </form>
+       <form id="miForm" action="https://script.google.com/a/macros/est.ort.edu.ar/s/AKfycbyLP6o-tD80m3TbYLUzAE_oCuKcQqa3xp8KdRixa-R_AEKHAzNX11mYU6MCfBznwdA/exec" method="POST" target="hidden_iframe" onsubmit="enviarFormulario()">
+  <div class="campo">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" required>
+  </div>
+  <div class="campo">
+    <label for="email">Correo electrónico</label>
+    <input type="email" name="email" required>
+  </div>
+  <div class="campo">
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" rows="5" required></textarea>
+  </div>
+  <button type="submit">Enviar consulta</button>
+</form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<script>
+  function enviarFormulario(){
+    setTimeout(function(){
+      window.location.href = 'gracias.html';
+    }, 1000);
+  }
+</script>
+
+
+
       </section>
     </main>
 
